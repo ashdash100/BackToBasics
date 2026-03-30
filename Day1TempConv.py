@@ -9,6 +9,7 @@ def TemperatureConverter():
   print(str(num) + " degrees " + startunit + " equals " + str(value) + " degrees " + endunit)
 
 def startMenu():
+  """ This function will ask the user for their starting unit of temperature and return it as an integer (1, 2, or 3) """
   start = int(input("Please select your CURRENT unit of temperature: \n\t1. Celsius (C)     2. Fahrenheit (F)     3. Kelvin (K)\n"))
   if start not in [1, 2, 3]:
     print("I'm sorry, please enter a valid unit (1 2 3).\n")
@@ -18,6 +19,8 @@ def startMenu():
   return start
 
 def convertMenu(start):
+  """ This function will ask the user for their goal unit of temperature and return it as an integer (1, 2, or 3) """
+  """ If the user selects 4, they will be taken back to the start menu to change their original unit of temperature """
   end = int(input("\nPlease select your GOAL unit of temperature: \n\t1. Celsius (C)     2. Fahrenheit (F)     3. Kelvin (K)    4. Go back (Change original unit)\n"))
   if end not in [1,2,3,4]:
     print("I'm sorry, please enter a valid unit (1 2 3).\n")
@@ -31,10 +34,12 @@ def convertMenu(start):
   return start, end
 
 def numMenu(start):
+  """ This function will ask the user for the number they want to convert and return it as a float."""
   num = float(input("\nPlease input the number you hope to convert: \n"))
   return num
 
 def selection(sel):
+  """ This function will take in the user's selection for unit of temperature and return the unit as a string. """
   if sel == 1:
     unit = "Celsius (C)"
   if sel == 2:
@@ -46,6 +51,7 @@ def selection(sel):
   return unit
 
 def conversion(start, end, num):
+  """ This function will take in the user's starting unit, goal unit, and number to convert and return all three along with the starting and goal units as strings. """
   startunit = selection(start)
   endunit = selection(end)
   print("\nWould you like to convert " + str(num) + " degrees " + startunit + " to " + endunit)
@@ -60,6 +66,7 @@ def conversion(start, end, num):
   return start, end, num, startunit, endunit
 
 def converter(start, end, num):
+  """ This function will take in the user's starting unit, goal unit, and number to convert, returning the converted value. """
   # Same units
   if start == end:
     val = num
