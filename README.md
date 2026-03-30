@@ -3,7 +3,7 @@
 
 Day 1: Temperature Converter (F, C, K)
 
-Day 2: Word Counter (Count the number fo words in a piece of text)
+Day 2: Word Counter (Count the number of words in a piece of text)
 
 Day 3: FizzBuz
 
