@@ -71,7 +71,7 @@ def converter(start, end, num):
     val = num + 273.15
   # K --> F
   if start == 3 and end == 2:
-    val = (num - 273.15) * 1.8 + 82
+    val = (num - 273.15) * 1.8 + 32
   # K --> C
   if start == 3 and end == 1:
     val = num - 273.15
