@@ -5,7 +5,7 @@ Day 1: Temperature Converter (F, C, K)
 
 Day 2: Word Counter 
 
-Day 3: FizzBuz
+Day 3: FizzBuzz
 
 Day 4: Guess the Number
 
