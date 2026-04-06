@@ -5,7 +5,7 @@ def numberGuesser():
   """Generate a random number from 1-100 for the user to guess. """
   mynum = random.randint(1,100)
   print("Hello! Welcome to my number guesser!")
-  print("This is Day 2 of my Back To Basics Coding series\n")
+  print("This is Day 2 of my Back To Basics Coding series.\n")
   guess = int(input("I have selected a random number between 1 and 100. Please input a number and I will tell you if my number is higher or lower.\n"))
   analyzer(guess, mynum)
   
